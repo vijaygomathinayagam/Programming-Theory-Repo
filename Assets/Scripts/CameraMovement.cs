@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Vector3 cameraPos = new(player.transform.position.x, 4.2f, -7.8f);
+        Vector3 cameraPos = new(player.transform.position.x, Constants.MainCameraYPos, Constants.MainCameraZPos);
         transform.position = cameraPos;
     }
 }

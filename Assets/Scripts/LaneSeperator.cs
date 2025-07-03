@@ -3,7 +3,8 @@ using UnityEngine;
 public class LaneSeperator : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
+    public float speed;
+    public float Speed => speed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
