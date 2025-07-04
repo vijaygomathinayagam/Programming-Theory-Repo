@@ -16303,6 +16303,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+  redLightFront: {fileID: 78584598}
+  redLightSide: {fileID: 220278338}
+  redLightRear: {fileID: 1380588598}
+  whiteLight: {fileID: 1432827966}
+  blueLightFront: {fileID: 194898781}
+  blueLightSide: {fileID: 1339878700}
+  blueLightRear: {fileID: 1273574676}
+  redLightMaterial: {fileID: 2100000, guid: c99d842975cec4b4788b7c39d1cc6c65, type: 2}
+  blueLightMaterial: {fileID: 2100000, guid: c29d5ab5ae8f14a85bf91e2379608ae7, type: 2}
+  whiteLightMaterial: {fileID: 2100000, guid: f3860a4e0f33f4d2daa6a5bd004891ee, type: 2}
+  noLightMaterial: {fileID: 2100000, guid: 70e2ece048be548dea02e086a0357570, type: 2}
 --- !u!54 &1705291760
 Rigidbody:
   m_ObjectHideFlags: 0
