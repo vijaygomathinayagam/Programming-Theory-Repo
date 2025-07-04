@@ -30,4 +30,5 @@ public class Constants : MonoBehaviour
     public static readonly string CarTag = "Car";
     public static readonly int ChangeLaneSteps = 100;
     public static readonly float ChangeLaneTime = 0.5f;
+    public static readonly int CarCrossScore = 5;
 }

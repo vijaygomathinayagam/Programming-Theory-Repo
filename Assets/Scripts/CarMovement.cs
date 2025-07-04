@@ -22,6 +22,7 @@ public class CarMovement : MonoBehaviour
     {
         if (transform.position.z < Constants.CarSeperatorZLowerBound)
         {
+            gameManager.UpdateAndDisplayScore(Constants.CarCrossScore);
             Destroy(gameObject);
             return;
         }
