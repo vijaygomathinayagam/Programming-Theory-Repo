@@ -17,9 +17,11 @@ public class Vehicle : MonoBehaviour
     private IEnumerator rightIndicatorRoutine;
     protected List<Material> noLightMaterials = new List<Material>();
     protected List<Material> yellowLightMaterials = new List<Material>();
+    protected GameManager gameManager;
 
-    protected void initIndicator()
+    protected void init()
     {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         noLightMaterials.Add(noLightMaterial);
         yellowLightMaterials.Add(yellowLightMaterial);
     }
@@ -73,6 +75,12 @@ public class Vehicle : MonoBehaviour
 
             leftIndicator.SetMaterials(noLightMaterials);
             yield return new WaitForSeconds(Constants.IndicatorLightDuration);
+
+
+            if (!gameManager.isGameActive)
+            {
+                break;
+            }
         }
     }
 
@@ -85,6 +93,11 @@ public class Vehicle : MonoBehaviour
 
             rightIndicator.SetMaterials(noLightMaterials);
             yield return new WaitForSeconds(Constants.IndicatorLightDuration);
+
+            if (!gameManager.isGameActive)
+            {
+                break;
+            }
         }
     }
 

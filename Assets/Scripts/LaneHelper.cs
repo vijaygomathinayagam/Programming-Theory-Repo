@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class LaneHelper : MonoBehaviour
 {
+    private GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+    }
     public int GetLaneNumberForPos(float xPos)
     {
         for (int i = 0; i < Constants.LaneSeperatorXPosArr.Length; i++)
@@ -78,6 +84,10 @@ public class LaneHelper : MonoBehaviour
         Vehicle car2Vehicle = carObject2.GetComponent<Vehicle>();
         for (int i = 0; i < Constants.ChangeLaneSteps; i++)
         {
+            if (!gameManager.isGameActive)
+            {
+                break;
+            }
             yield return new WaitForSeconds(waitTime);
             if (carObject2.transform.position.x > Constants.CarsSpawnXPosArr[lane - 1])
             {

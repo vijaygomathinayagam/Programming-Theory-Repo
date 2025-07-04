@@ -6,7 +6,6 @@ public class PlayerController : Vehicle
 {
     [SerializeField]
     private float speed;
-    private GameManager gameManager;
     protected LaneHelper laneHelper;
     [SerializeField]
     private MeshRenderer redLightFront;
@@ -38,23 +37,25 @@ public class PlayerController : Vehicle
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        init();
         laneHelper = GameObject.Find("Game Manager").GetComponent<LaneHelper>();
         redLightMaterials.Add(redLightMaterial);
         blueLightMaterials.Add(blueLightMaterial);
         whiteLightMaterials.Add(whiteLightMaterial);
         StartCoroutine(startSiren());
-        initIndicator();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        transform.position += Vector3.right * horizontalInput * Time.deltaTime * speed;
-        checkBounds();
-        checkLane();
-        checkIndicator();
+        if (gameManager.isGameActive)
+        {
+            float horizontalInput = Input.GetAxis("Horizontal");
+            transform.position += Vector3.right * horizontalInput * Time.deltaTime * speed;
+            checkBounds();
+            checkLane();
+            checkIndicator();
+        }
     }
 
     private void checkBounds()

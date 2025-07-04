@@ -8,11 +8,14 @@ public class SpawnManager : MonoBehaviour
     private GameObject blueCarPrefab;
     [SerializeField]
     private GameObject greenCarPrefab;
+    private GameManager gameManager;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         InvokeRepeating("spawnASetOfCars", Constants.SpawnCarsDelay, Constants.SpawnCarsInterval);
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -23,12 +26,15 @@ public class SpawnManager : MonoBehaviour
 
     private void spawnASetOfCars()
     {
-        int randomIndex = Random.Range(0, 3);
-        switch (randomIndex)
+        if (gameManager.isGameActive)
         {
-            case 0: spawnSingleCar(); break;
-            case 1: spawnTwoCars(); break;
-            case 2: spawnThreeCars(); break;
+            int randomIndex = Random.Range(0, 3);
+            switch (randomIndex)
+            {
+                case 0: spawnSingleCar(); break;
+                case 1: spawnTwoCars(); break;
+                case 2: spawnThreeCars(); break;
+            }
         }
     }
 

@@ -3,6 +3,7 @@ using UnityEngine.Android;
 
 public class Constants : MonoBehaviour
 {
+    public static readonly int MenuSceneOrder = 0;
     public static readonly int GameSceneOrder = 1;
     public static readonly float LaneSeperatorYPos = 0.1f;
     public static readonly float LaneSeperatorZPos = 150.0f;

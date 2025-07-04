@@ -4,7 +4,6 @@ public class CarMovement : Vehicle
 {
     private float reducedCarSpeedFromAmbulance;
     private bool isMovementHandled;
-    protected GameManager gameManager;
     protected LaneHelper laneHelper;
     protected GameObject player;
 
@@ -15,20 +14,23 @@ public class CarMovement : Vehicle
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         laneHelper = GameObject.Find("Game Manager").GetComponent<LaneHelper>();
         player = GameObject.Find("Player");
-        initIndicator();
+        init();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.z < Constants.CarSeperatorZLowerBound)
+        if (gameManager.isGameActive)
         {
-            gameManager.UpdateAndDisplayScore(Constants.CarCrossScore);
-            Destroy(gameObject);
-            return;
+            if (transform.position.z < Constants.CarSeperatorZLowerBound)
+            {
+                gameManager.UpdateAndDisplayScore(Constants.CarCrossScore);
+                Destroy(gameObject);
+                return;
+            }
+            transform.position += Vector3.back * reducedCarSpeedFromAmbulance * Time.deltaTime;
+            checkAndHandleMovement();
         }
-        transform.position += Vector3.back * reducedCarSpeedFromAmbulance * Time.deltaTime;
-        checkAndHandleMovement();
     }
 
     private void checkAndHandleMovement()
@@ -47,4 +49,12 @@ public class CarMovement : Vehicle
     }
 
     protected virtual void handleMovement() { }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            gameManager.UpdateAndDisplayGameover();
+        }
+    }
 }
