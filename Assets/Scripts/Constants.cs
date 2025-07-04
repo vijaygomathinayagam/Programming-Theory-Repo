@@ -7,7 +7,10 @@ public class Constants : MonoBehaviour
     public static readonly float LaneSeperatorYPos = 0.1f;
     public static readonly float LaneSeperatorZPos = 150.0f;
     public static readonly float LaneSeperatorZLowerBound = -10.0f;
-    public static readonly float[] LaneSeperatorXPosArr = { -6.515f, 0, 6.515f };
+    public static readonly float Lane1EndXPos = -6.515f;
+    public static readonly float Lane2EndXPos = 0.0f;
+    public static readonly float Lane3EndXPos = 6.515f;
+    public static readonly float[] LaneSeperatorXPosArr = { Lane1EndXPos, 0, Lane3EndXPos };
     public static readonly float MainCameraYPos = 4.2f;
     public static readonly float MainCameraZPos = -7.8f;
     public static readonly float LaneGenerateDelay = 0.0f;
