@@ -75,16 +75,21 @@ public class LaneHelper : MonoBehaviour
         float waitTime = Constants.ChangeLaneTime / Constants.ChangeLaneSteps;
         float changeLaneDistance = Mathf.Abs(Constants.CarsSpawnXPosArr[lane - 1] - carObject2.transform.position.x);
 
-        for (int i = 0; i < Constants.ChangeLaneSteps; i++) {
+        Vehicle car2Vehicle = carObject2.GetComponent<Vehicle>();
+        for (int i = 0; i < Constants.ChangeLaneSteps; i++)
+        {
             yield return new WaitForSeconds(waitTime);
             if (carObject2.transform.position.x > Constants.CarsSpawnXPosArr[lane - 1])
             {
                 carObject2.transform.position += new Vector3(-(changeLaneDistance / Constants.ChangeLaneSteps), 0, 0);
+                car2Vehicle.ShowLeftIndicator();
             }
             else
-            { 
+            {
                 carObject2.transform.position += new Vector3(changeLaneDistance / Constants.ChangeLaneSteps, 0, 0);
+                car2Vehicle.ShowLeftIndicator();
             }
         }
+        car2Vehicle.TurnOffBothIndicator();
     }
 }

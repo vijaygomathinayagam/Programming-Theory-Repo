@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CarMovement : MonoBehaviour
+public class CarMovement : Vehicle
 {
     private float reducedCarSpeedFromAmbulance;
     private bool isMovementHandled;
@@ -15,6 +15,7 @@ public class CarMovement : MonoBehaviour
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         laneHelper = GameObject.Find("Game Manager").GetComponent<LaneHelper>();
         player = GameObject.Find("Player");
+        initIndicator();
     }
 
     // Update is called once per frame

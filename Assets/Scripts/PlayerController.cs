@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Vehicle
 {
     [SerializeField]
     private float speed;
@@ -30,10 +30,7 @@ public class PlayerController : MonoBehaviour
     private Material blueLightMaterial;
     [SerializeField]
     private Material whiteLightMaterial;
-    [SerializeField]
-    private Material noLightMaterial;
 
-    private List<Material> noLightMaterials = new List<Material>();
     private List<Material> redLightMaterials = new List<Material>();
     private List<Material> whiteLightMaterials = new List<Material>();
     private List<Material> blueLightMaterials = new List<Material>();
@@ -43,11 +40,11 @@ public class PlayerController : MonoBehaviour
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         laneHelper = GameObject.Find("Game Manager").GetComponent<LaneHelper>();
-        noLightMaterials.Add(noLightMaterial);
         redLightMaterials.Add(redLightMaterial);
         blueLightMaterials.Add(blueLightMaterial);
         whiteLightMaterials.Add(whiteLightMaterial);
         StartCoroutine(startSiren());
+        initIndicator();
     }
 
     // Update is called once per frame
@@ -57,6 +54,7 @@ public class PlayerController : MonoBehaviour
         transform.position += Vector3.right * horizontalInput * Time.deltaTime * speed;
         checkBounds();
         checkLane();
+        checkIndicator();
     }
 
     private void checkBounds()
@@ -104,5 +102,22 @@ public class PlayerController : MonoBehaviour
         blueLightFront.SetMaterials(noLightMaterials);
         blueLightSide.SetMaterials(noLightMaterials);
         blueLightRear.SetMaterials(noLightMaterials);
+    }
+
+    private void checkIndicator()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        if (horizontalInput < 0)
+        {
+            ShowLeftIndicator();
+        }
+        else if (horizontalInput > 0)
+        {
+            ShowRightIndicator();
+        }
+        else
+        {
+            TurnOffBothIndicator();
+        }
     }
 }

@@ -32,4 +32,5 @@ public class Constants : MonoBehaviour
     public static readonly float ChangeLaneTime = 0.5f;
     public static readonly int CarCrossScore = 5;
     public static readonly float SirenLightDuration = 0.2f;
+    public static readonly float IndicatorLightDuration = 0.1f;
 }
