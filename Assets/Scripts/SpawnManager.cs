@@ -72,15 +72,23 @@ public class SpawnManager : MonoBehaviour
     private void spawnThreeCars()
     {
         int randomIndex = Random.Range(0, Constants.CarsSpawnXPosArr.Length);
+        int count = 0;
         for (int i = 0; i < Constants.CarsSpawnXPosArr.Length; i++)
         {
             if (i == randomIndex)
             {
                 continue;
             }
+            count++;
+
             Vector3 carSpawnPos = new Vector3(Constants.CarsSpawnXPosArr[i], redCarPrefab.transform.position.y,
-            Constants.SpawnCarZPos);
+                Constants.SpawnCarZPos);
             GameObject carPrefab = getRandomPrefab();
+
+            if (count == 3)
+            {
+                carPrefab = blueCarPrefab;
+            }
             Instantiate(carPrefab, carSpawnPos, carPrefab.transform.rotation);
         }
     }
