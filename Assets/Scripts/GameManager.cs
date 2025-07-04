@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         UpdateAndDisplayScore(0);
         isGameActive = true;
+        Camera.main.GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -40,6 +41,8 @@ public class GameManager : MonoBehaviour
     public void UpdateAndDisplayGameover()
     {
         isGameActive = false;
+        GameObject.Find("Player").GetComponent<PlayerController>().GetComponent<AudioSource>().Play();
+        Camera.main.GetComponent<AudioSource>().Stop();
         gameover.SetActive(true);
     }
 
