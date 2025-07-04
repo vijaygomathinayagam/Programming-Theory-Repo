@@ -3214,7 +3214,7 @@ GameObject:
   - component: {fileID: 359271495}
   - component: {fileID: 359271497}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16028,7 +16028,7 @@ GameObject:
   - component: {fileID: 1705291761}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16073,7 +16073,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705291757}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 2500
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -16099,7 +16099,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705291757}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 00d96d74679e647e9a5420eef8245c42, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

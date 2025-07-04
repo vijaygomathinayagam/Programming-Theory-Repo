@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7492081838096115683}
   - component: {fileID: 1661458469617041519}
   - component: {fileID: 5513664170009067221}
-  - component: {fileID: 8836574498466739059}
   m_Layer: 0
   m_Name: Right mirror
   m_TagString: Untagged
@@ -181,28 +180,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519465073509892721}
   m_Mesh: {fileID: 0}
---- !u!64 &8836574498466739059
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519465073509892721}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &569869916799512985
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +193,6 @@ GameObject:
   - component: {fileID: 8134821185003360844}
   - component: {fileID: 565382950771714692}
   - component: {fileID: 250110349163860184}
-  - component: {fileID: 6247539699469345625}
   m_Layer: 0
   m_Name: Rear right wheel
   m_TagString: Untagged
@@ -1378,28 +1354,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569869916799512985}
   m_Mesh: {fileID: 0}
---- !u!64 &6247539699469345625
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569869916799512985}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &768202287513352658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,7 +1367,6 @@ GameObject:
   - component: {fileID: 2348643995490749334}
   - component: {fileID: 5300711834165791320}
   - component: {fileID: 5488633125030912151}
-  - component: {fileID: 8150218413307239302}
   m_Layer: 0
   m_Name: Front right wheel
   m_TagString: Untagged
@@ -2575,28 +2528,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768202287513352658}
   m_Mesh: {fileID: 0}
---- !u!64 &8150218413307239302
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768202287513352658}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &1261364786225230264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,7 +2627,6 @@ GameObject:
   - component: {fileID: 3823925446887058786}
   - component: {fileID: 6693728853156550997}
   - component: {fileID: 7817275783394105016}
-  - component: {fileID: 4598249247635853962}
   m_Layer: 0
   m_Name: Front left wheel
   m_TagString: Untagged
@@ -3858,28 +3788,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044437490673494116}
   m_Mesh: {fileID: 0}
---- !u!64 &4598249247635853962
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044437490673494116}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &2449865657504380588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,7 +3801,6 @@ GameObject:
   - component: {fileID: 4804759674151804646}
   - component: {fileID: 8288892068551704789}
   - component: {fileID: 5938081902243343618}
-  - component: {fileID: 7864343721311417067}
   m_Layer: 0
   m_Name: Rear left wheel
   m_TagString: Untagged
@@ -5055,28 +4962,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2449865657504380588}
   m_Mesh: {fileID: 0}
---- !u!64 &7864343721311417067
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2449865657504380588}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &3203848820123526288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,7 +5061,6 @@ GameObject:
   - component: {fileID: 7681204019021080516}
   - component: {fileID: 942650438401198468}
   - component: {fileID: 8254163606511895619}
-  - component: {fileID: 9123080096728129149}
   m_Layer: 0
   m_Name: Front Mirror
   m_TagString: Untagged
@@ -5344,28 +5228,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3376290155030845443}
   m_Mesh: {fileID: 0}
---- !u!64 &9123080096728129149
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3376290155030845443}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &3859934827795291974
 GameObject:
   m_ObjectHideFlags: 0
@@ -5465,9 +5327,8 @@ GameObject:
   - component: {fileID: 7054557123753649803}
   - component: {fileID: 6854562899578190266}
   - component: {fileID: 598658099270589986}
-  - component: {fileID: 5293732086264831477}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6626,28 +6487,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4119924841207549708}
   m_Mesh: {fileID: 0}
---- !u!64 &5293732086264831477
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4119924841207549708}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &4716093329643628280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,7 +6586,6 @@ GameObject:
   - component: {fileID: 4252766748436207348}
   - component: {fileID: 3680647411072128745}
   - component: {fileID: 6131063148348293267}
-  - component: {fileID: 974568188413058781}
   m_Layer: 0
   m_Name: Left Mirror
   m_TagString: Untagged
@@ -6915,28 +6753,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4885068687672232044}
   m_Mesh: {fileID: 0}
---- !u!64 &974568188413058781
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4885068687672232044}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &5554568273572319923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6946,10 +6762,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 131694526426857073}
-  - component: {fileID: 1542383300370623861}
+  - component: {fileID: -6668067071433931525}
+  - component: {fileID: -2211534075670226998}
+  - component: {fileID: 8482975653451134575}
   m_Layer: 0
   m_Name: Red car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6985,7 +6803,7 @@ Transform:
   - {fileID: 3285030484189360461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1542383300370623861
+--- !u!114 &-6668067071433931525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6994,9 +6812,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 5554568273572319923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d42f31cf811542f184a5b21a44e966e, type: 3}
+  m_Script: {fileID: 11500000, guid: 57a08e074ab9d490d8f721e739e9ede3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &-2211534075670226998
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5554568273572319923}
+  serializedVersion: 5
+  m_Mass: 1500
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!65 &8482975653451134575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5554568273572319923}
+  m_Material: {fileID: 13400000, guid: 00d96d74679e647e9a5420eef8245c42, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.1637386, z: 2.03}
+  m_Center: {x: 0, y: -0.19552845, z: -0.039203763}
 --- !u!1 &6574167024879675528
 GameObject:
   m_ObjectHideFlags: 0
@@ -7182,7 +7048,6 @@ GameObject:
   - component: {fileID: 861816295528691729}
   - component: {fileID: 3226925277245428457}
   - component: {fileID: 8641280634776285672}
-  - component: {fileID: 6832201767177862246}
   m_Layer: 0
   m_Name: Back Mirror
   m_TagString: Untagged
@@ -7349,28 +7214,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7882886111754337088}
-  m_Mesh: {fileID: 0}
---- !u!64 &6832201767177862246
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7882886111754337088}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &9067555874919346090
 GameObject:

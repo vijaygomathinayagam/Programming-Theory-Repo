@@ -5,11 +5,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float speed;
     private GameManager gameManager;
+    protected LaneHelper laneHelper;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        laneHelper = GameObject.Find("Game Manager").GetComponent<LaneHelper>();
     }
 
     // Update is called once per frame
@@ -35,7 +37,6 @@ public class PlayerController : MonoBehaviour
 
     private void checkLane()
     {
-        gameManager.setCurrentLane(LaneHelper.GetLaneNumberForPos(transform.position.x));
-        Debug.Log(LaneHelper.GetLaneNumberForPos(transform.position.x));
+        gameManager.setCurrentLane(laneHelper.GetLaneNumberForPos(transform.position.x));
     }
 }
